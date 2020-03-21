@@ -5,7 +5,7 @@ document.getElementById('test-button').addEventListener('click', function(){
 
 const titleClickHandler = function(event){
   console.log('Link was clicked!', event);
-
+  
   /* remove class 'active' from all article links  */
 
   /* add class 'active' to the clicked link */
