@@ -33,7 +33,7 @@ const titleClickHandler = function(event){
 
   /* get 'href' attribute from the clicked link */
 
-    const articleSelector = #;
+    const articleSelector = article;
     article = clickedElement.getAttribute('.title a');
     console.log(articleSelector);
 
