@@ -1,10 +1,3 @@
-const templates = {
-  articleLink: document.querySelector('#template-article-link').innerHTML,
-  tagLink: document.querySelector('#template-tag-link').innerHTML,
-  authorLink: document.querySelector('#template-author-link').innerHTML,
-  authorRigthtColumnLink: document.querySelector('#template-author-right-column-link').innerHTML
-}
-
 'use strict';
 
 document.getElementById('test-button').addEventListener('click', function(){
