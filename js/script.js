@@ -202,3 +202,43 @@ function addClickListenersToTags(){
 }
 
 addClickListenersToTags();
+
+function generateAuthors() {
+
+  /* find all authors */
+
+  const authors = document.querySelectorAll(optArticleSelector);
+
+  /* START LOOP: for every author: */
+
+  for (let author of authors) {
+
+    /* find authors wrapper */
+
+    const authorsWrapper = author.querySelector(optArticleAuthorSelector);
+
+    /* make html variable with empty string */
+
+   let html = '';
+
+   /* get authors from data-author attribute */
+
+    const articleAuthor = author.getAttribute('data-author');
+
+    /* generate HTML of the link */
+
+    const linkHTML = '<li><a href="#author-' + articleAuthor + '">' + articleAuthor + '</a></li>';
+
+    /* add generated code to html variable */
+
+   html = html + linkHTML;
+
+   /* insert HTML of all the links into author wrapper */
+
+    authorsWrapper.insertAdjacentHTML('beforeend', html);
+
+    /* END LOOP: for every article: */
+    }
+  }
+
+  generateAuthors();
