@@ -147,8 +147,6 @@ const tags = document.querySelectorAll('.post-tags .list li a');
 
 generateTags();
 
-generateTags();
-
 function tagClickHandler(event){
 
   /* prevent default action for this event */
