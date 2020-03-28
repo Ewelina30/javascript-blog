@@ -124,6 +124,12 @@ function generateTags(){
 
   /* END LOOP: for every article: */
   }
+
+  const tags = document.querySelectorAll('.post-tags .list li a');
+
+ for(let tag of tags){
+   tag.addEventListener('click', tagClickHandler);
+ }   
 }
 generateTags();
 
