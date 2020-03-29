@@ -98,7 +98,7 @@ function generateTags(){
 
     /* split tags into array */
 
-    const articleTagsArray = articleTags.split('  ');
+    const articleTagsArray = articleTags.split(' ');
     console.log(articleTagsArray);
 
     /* START LOOP: for each tag */
@@ -120,7 +120,7 @@ function generateTags(){
 
     /* insert HTML of all the links into the tags wrapper */
 
-    tagsWrapper.insertAdjacentHTML('beforeend', html);
+     tagsWrapper.insertAdjacentHTML('beforeend', html);
 
   /* END LOOP: for every article: */
   }
@@ -167,7 +167,7 @@ function tagClickHandler(event){
 
   /* START LOOP: for each found tag link */
 
-  for (let hrefTagLink of hrefTagLinks) {
+    for (let hrefTagLink of hrefTagLinks) {
 
     /* add class active */
 
