@@ -5,7 +5,7 @@ document.getElementById('test-button').addEventListener('click', function(){
   console.log('links:', links);
 });
 
-const titleClickHandler = function(event){
+function titleClickHandler(event){
   event.preventDefault();
   const clickedElement = this;
 
@@ -59,10 +59,9 @@ function generateTitleLinks(customSelector = ''){
     /* insert link into titleList */
 
      html = html + linkHTML;
-
    }
 
-    titleList.innerHTML = html;
+   titleList.innerHTML = html;
 }
 
 generateTitleLinks();
@@ -74,10 +73,6 @@ for(let link of links){
 }
 
 function generateTags(){
-
-  /* [NEW] create a new variable allTags with an empty array */
-
-  let allTags = [];
 
 /* find all articles */
 
@@ -199,7 +194,7 @@ function addClickListenersToTags(){
 
     /* add tagClickHandler as event listener for that link */
 
-     link.addEventListener('click', titleClickHandler);
+     link.addEventListener('click', tagClickHandler);
 
   /* END LOOP: for each link */
   }
